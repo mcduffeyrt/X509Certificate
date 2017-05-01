@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B9225D41EB6E8F60082A8C1 /* Source in Resources */ = {isa = PBXBuildFile; fileRef = 1B9225D31EB6E8F60082A8C1 /* Source */; };
+		1B9225D61EB6E9180082A8C1 /* Tests in Resources */ = {isa = PBXBuildFile; fileRef = 1B9225D51EB6E9180082A8C1 /* Tests */; };
 		1B972C381EB191660070B179 /* X509Certificate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B972C2E1EB191660070B179 /* X509Certificate.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +23,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B9225D31EB6E8F60082A8C1 /* Source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Source; sourceTree = "<group>"; };
+		1B9225D51EB6E9180082A8C1 /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
 		1B972C2E1EB191660070B179 /* X509Certificate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = X509Certificate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B972C371EB191660070B179 /* X509CertificateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = X509CertificateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -47,6 +51,8 @@
 		1B972C241EB191660070B179 = {
 			isa = PBXGroup;
 			children = (
+				1B9225D51EB6E9180082A8C1 /* Tests */,
+				1B9225D31EB6E8F60082A8C1 /* Source */,
 				1B972C2F1EB191660070B179 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +128,7 @@
 					1B972C2D1EB191660070B179 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = BG932XJGUT;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					1B972C361EB191660070B179 = {
@@ -154,6 +161,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9225D61EB6E9180082A8C1 /* Tests in Resources */,
+				1B9225D41EB6E8F60082A8C1 /* Source in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +305,7 @@
 		1B972C431EB191660070B179 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BG932XJGUT;
@@ -308,6 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcduff.X509Certificate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -315,6 +326,7 @@
 		1B972C441EB191660070B179 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BG932XJGUT;
